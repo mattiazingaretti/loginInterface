@@ -48,7 +48,7 @@ app.post('/signup', (req, res) => {
       con.query(sql, function (err, result) {
         if (err) throw err;
         console.log("User inserted");
-        res.json({ success: "OK", data: users });
+        res.json({ success: "OK", data: req.body.email });
       });
     }
   })

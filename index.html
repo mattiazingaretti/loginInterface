@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<head>
+  <!-- Remember to load jQuery before link any script that requires it-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/Client.js"></script>
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="wrapper">
+      <h2 id="welcomelabel">Login Screen</h2>
+      <form name="loginform" action="#"><!--Already associated a callback in Client.js -->
+        <label for="email">Email</label>
+        <input type="email" id="email" /><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" /><br>
+        <button id="login">Sign in</button>
+      </form>
+      <button id="signup">Sign up</button>
+    </div>
+  </div>
+</body>
+
+</html>
